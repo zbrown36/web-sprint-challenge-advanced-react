@@ -5,12 +5,15 @@ import PlantList from "./components/PlantList";
 import ShoppingCart from "./components/ShoppingCart";
 import CheckoutForm from "./components/CheckoutForm";
 
-import "./App.css";
+
+
 
 function App() {
   // array of plants that have been added to the cart
   const [cart, setCart] = useState([]);
+ 
 
+ 
   // add a plant to the cart
   const addToCart = (plant) => {
     setCart([...cart, plant]);
@@ -41,6 +44,13 @@ function App() {
                   {cart.length > 0 && cart.length}
                 </span>
               </NavLink>
+            </li>
+            <li>
+            <p className="switch">Theme Switch</p>
+            <div className="light-mode__toggle">
+            
+              <div  />
+            </div>
             </li>
           </ul>
         </nav>
